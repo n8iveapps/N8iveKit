@@ -1,6 +1,6 @@
 ![N8iveKit](http://n8iveapps.com/opensource/n8ivekit/n8ivekit.png)
 
-A set of frameworks making iOS development more fun, developed by [N8ive Apps](https://n8iveapps.com)
+A set of frameworks making iOS development more fun, developed by [N8ive Apps](http://n8iveapps.com)
 
 ## Frameworks
 

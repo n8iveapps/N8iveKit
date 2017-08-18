@@ -44,7 +44,7 @@ public extension UIColor {
     var hex = hexString
     // Check for hash and remove it
     if hex.hasPrefix("#") {
-      hex = hex.substring(from: hex.index(hex.startIndex, offsetBy: 1))
+      hex = String(hex[hex.index(hex.startIndex, offsetBy: 1)...])
     }
     // Check if can get HEX integer
     guard let hexVal = Int(hex, radix: 16) else {

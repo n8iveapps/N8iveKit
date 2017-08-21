@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import N8AuthKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
   var window: UIWindow?
-
+  var auth = OAuth2Client(configuration: OAuth2Configuration())
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     return true
@@ -40,5 +42,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
 
+  func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
+    // you should probably first check if this is the callback being opened
+    if url.absoluteString.contains(self.auth.configuration.redirectURL) {
+      self.auth.handle(redirectURL: url)
+    }
+    return true
+  }
 }
 

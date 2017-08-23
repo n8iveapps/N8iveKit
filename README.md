@@ -5,10 +5,13 @@ A set of frameworks making iOS development more fun, developed by [N8ive Apps](h
 ## Frameworks
 
 - [x] InterfaceKit
-- [ ] AuthKit
-- [ ] NetworkKit
+- [x] AuthKit
+- [ ] CoreKit (in progress)
+- [ ] NetworkKit (in progress)
 
 More frameworks to be added, stay tuned :relaxed:
+
+
 
 ## InterfaceKit
 
@@ -30,7 +33,20 @@ Replaces [UITabBarController](https://developer.apple.com/documentation/uikit/ui
 
 To access the TabBar, just call `adaptableTabBar` property of the `NKTabBarController`.
 
+
+
+## AuthKit
+
+#### OAuth2Client:
+
+The base class for handling [OAuth2](https://www.oauth.com/oauth2-servers/oauth2-clients/mobile-and-native-apps/) flow on iOS using `SFSafariViewController`, currently supports`OAuth2CodeGrant` , tested on [Facebook](https://www.facebook.com) , [Google](https://www.google.com) &  [Github](https://www.github.com) (example app includes code for all).
+
+`OAuth2Client`supports custom handlers for updating UI during the authentication flow.
+
+
+
 ## Requirements
+
 - iOS 10.0+
 - Xcode 9.0
 - Swift 4.0
@@ -51,14 +67,25 @@ N8iveKit can be integrated manually into your project, dependency managers suppo
 - Open the `N8iveKit` folder, and drag the needed kit (currently, only `InterfaceKit.xcodeproj` available) into the Project Navigator of your application's Xcode project.
 
 - Navigate to the target configuration window by clicking on the blue project icon, and selecting the application target under the "Targets" heading in the sidebar.
+
 - In the tab bar at the top of that window, open the "General" panel.
+
 - Click on the `+` button under the "Embedded Binaries" section.
+
 - Select the framework (currently `InterfaceKit.framework`).
+
 - Enjoy  :relaxed:
+
+Please note that some frameworks depend on others, so you have to include all needed frameworks.
 
 ## Usage
 
 You can use Interface builder and change the element type to your desired one, or you can simple initialize the elements in code.
+
+## Included Open source libraries
+
+- [Alamofire](https://github.com/Alamofire/Alamofire) 
+- [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) 
 
 ## Communication
 

@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0E86BC1F4D9FC500226B84 /* N8CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E86BB1F4D9FC500226B84 /* N8CoreKit.framework */; };
 		8E172BF41F1A32CE00FA7EE1 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E172BF31F1A32CE00FA7EE1 /* assets.xcassets */; };
 		8E98C24E1F11611C00263659 /* InterfaceKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E98C24C1F11611C00263659 /* InterfaceKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E98C2AD1F11690B00263659 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2941F1163D100263659 /* DoubleExtensions.swift */; };
-		8E98C2AE1F11690B00263659 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2951F1163D100263659 /* StringExtensions.swift */; };
 		8E98C2AF1F11690B00263659 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2971F1163D100263659 /* UIButtonExtensions.swift */; };
 		8E98C2B01F11690B00263659 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2981F1163D100263659 /* UIColorExtensions.swift */; };
 		8E98C2B11F11690B00263659 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C29A1F1163D100263659 /* UIImageExtensions.swift */; };
@@ -32,12 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8E0E86BB1F4D9FC500226B84 /* N8CoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8CoreKit.framework; path = "../CoreKit/build/Debug-iphoneos/N8CoreKit.framework"; sourceTree = "<group>"; };
 		8E172BF31F1A32CE00FA7EE1 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		8E98C2491F11611C00263659 /* N8InterfaceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = N8InterfaceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E98C24C1F11611C00263659 /* InterfaceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceKit.h; sourceTree = "<group>"; };
 		8E98C24D1F11611C00263659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E98C2941F1163D100263659 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
-		8E98C2951F1163D100263659 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		8E98C2971F1163D100263659 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
 		8E98C2981F1163D100263659 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		8E98C29A1F1163D100263659 /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
@@ -63,17 +61,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0E86BC1F4D9FC500226B84 /* N8CoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E0E86BA1F4D9FC400226B84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E86BB1F4D9FC500226B84 /* N8CoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8E98C23F1F11611C00263659 = {
 			isa = PBXGroup;
 			children = (
 				8E98C24B1F11611C00263659 /* InterfaceKit */,
 				8E98C24A1F11611C00263659 /* Products */,
+				8E0E86BA1F4D9FC400226B84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,8 +118,6 @@
 		8E98C2931F1163D100263659 /* extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8E98C2941F1163D100263659 /* DoubleExtensions.swift */,
-				8E98C2951F1163D100263659 /* StringExtensions.swift */,
 				8E98C2971F1163D100263659 /* UIButtonExtensions.swift */,
 				8E98C2981F1163D100263659 /* UIColorExtensions.swift */,
 				8E98C29A1F1163D100263659 /* UIImageExtensions.swift */,
@@ -234,8 +240,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E98C2AD1F11690B00263659 /* DoubleExtensions.swift in Sources */,
-				8E98C2AE1F11690B00263659 /* StringExtensions.swift in Sources */,
 				8E98C2AF1F11690B00263659 /* UIButtonExtensions.swift in Sources */,
 				8E98C2B01F11690B00263659 /* UIColorExtensions.swift in Sources */,
 				8E98C2B11F11690B00263659 /* UIImageExtensions.swift in Sources */,

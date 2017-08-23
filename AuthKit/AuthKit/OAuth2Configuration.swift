@@ -33,7 +33,7 @@ open class OAuth2Configuration {
   private(set) public var redirectURL: String = ""
   
   /// The response type expected from an authorize call, e.g. "code" for Google.
-  private(set) public var responseType: String = ""
+  private(set) public var responseType: String = "code"
 
   /// The SFSafariViewController title.
   public final var preferredTitle: String = ""
@@ -63,6 +63,14 @@ open class OAuth2Configuration {
     self.scope = scope
     self.redirectURL = redirectURL
     self.responseType = responseType
+  }
+  
+  public init(clientId:String, authURL:String, tokenURL:String, scope:String, redirectURL:String) {
+    self.clientId = clientId
+    self.authURL = authURL
+    self.tokenURL = tokenURL
+    self.scope = scope
+    self.redirectURL = redirectURL
   }
   
   public init(clientId:String, authURL:String, tokenURL:String, redirectURL:String) {

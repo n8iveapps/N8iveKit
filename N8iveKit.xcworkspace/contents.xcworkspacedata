@@ -2,7 +2,13 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/bassio/dev/bassio_opensource/N8iveKit/AuthKit/N8AuthKit.xcodeproj">
+      location = "group:/muhammadbassio/dev/github/N8iveKit/NetworkKit/N8NetworkKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:/muhammadbassio/dev/github/N8iveKit/CoreKit/N8CoreKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AuthKit/N8AuthKit.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Examples/Examples.xcodeproj">

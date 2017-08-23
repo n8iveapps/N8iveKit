@@ -44,6 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey: Any] = [:]) -> Bool {
     // you should probably first check if this is the callback being opened
+    print("\(url.absoluteString)")
     if url.absoluteString.contains(self.auth.configuration.redirectURL) {
       self.auth.handle(redirectURL: url)
     }

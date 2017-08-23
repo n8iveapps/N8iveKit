@@ -8,6 +8,8 @@
 
 import Foundation
 import SafariServices
+import N8CoreKit
+import N8NetworkKit
 
 open class OAuth2Client {
   
@@ -81,7 +83,7 @@ open class OAuth2Client {
       if codeItems.count > 0 {
         self.clientIsLoadingToken()
         if let code = codeItems[0].value {
-          let headers = ["Content-Type": "application/x-www-form-urlencoded"]
+          let headers = ["Content-Type": "application/x-www-form-urlencoded", "Accept": "application/json"]
           let parameters = [
             "code": "\(code)",
             "client_id": "\(self.configuration.clientId)",

@@ -23,6 +23,14 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
+				<string>fb2038205793072526</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
 				<string>com.googleusercontent.apps.137865357678-opatlf959msgha35ra4tfsugg1pa4gvl</string>
 			</array>
 		</dict>
@@ -31,7 +39,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>fb2038205793072526</string>
+				<string>ghexample</string>
 			</array>
 		</dict>
 	</array>

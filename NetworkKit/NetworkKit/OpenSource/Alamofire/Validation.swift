@@ -48,7 +48,7 @@ extension Request {
         init?(_ string: String) {
             let components: [String] = {
                 let stripped = string.trimmingCharacters(in: .whitespacesAndNewlines)
-                let split = stripped.substring(to: stripped.range(of: ";")?.lowerBound ?? stripped.endIndex)
+                let split = stripped[..<(stripped.range(of: ";")?.lowerBound ?? stripped.endIndex)]
                 return split.components(separatedBy: "/")
             }()
 

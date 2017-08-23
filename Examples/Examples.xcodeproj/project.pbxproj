@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E0E87031F4DA2BA00226B84 /* N8NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E87021F4DA2BA00226B84 /* N8NetworkKit.framework */; };
+		8E0E87041F4DA2BA00226B84 /* N8NetworkKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E87021F4DA2BA00226B84 /* N8NetworkKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8E0E87061F4DA2BA00226B84 /* N8CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E87051F4DA2BA00226B84 /* N8CoreKit.framework */; };
+		8E0E87071F4DA2BA00226B84 /* N8CoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E87051F4DA2BA00226B84 /* N8CoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8E98C2761F1162FE00263659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2751F1162FE00263659 /* AppDelegate.swift */; };
 		8E98C2781F1162FE00263659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2771F1162FE00263659 /* ViewController.swift */; };
 		8E98C27B1F1162FE00263659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E98C2791F1162FE00263659 /* Main.storyboard */; };
@@ -25,7 +29,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				8E0E87041F4DA2BA00226B84 /* N8NetworkKit.framework in Embed Frameworks */,
 				8EA36B891F35D89F00D1DF79 /* N8InterfaceKit.framework in Embed Frameworks */,
+				8E0E87071F4DA2BA00226B84 /* N8CoreKit.framework in Embed Frameworks */,
 				8EE15AC11F4A1897001477C9 /* N8AuthKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -34,6 +40,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E0E87021F4DA2BA00226B84 /* N8NetworkKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = N8NetworkKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0E87051F4DA2BA00226B84 /* N8CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = N8CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E98C2721F1162FE00263659 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E98C2751F1162FE00263659 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E98C2771F1162FE00263659 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0E87031F4DA2BA00226B84 /* N8NetworkKit.framework in Frameworks */,
 				8EA36B881F35D89F00D1DF79 /* N8InterfaceKit.framework in Frameworks */,
+				8E0E87061F4DA2BA00226B84 /* N8CoreKit.framework in Frameworks */,
 				8EE15AC01F4A1897001477C9 /* N8AuthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,6 +71,8 @@
 		8E98C2691F1162FE00263659 = {
 			isa = PBXGroup;
 			children = (
+				8E0E87051F4DA2BA00226B84 /* N8CoreKit.framework */,
+				8E0E87021F4DA2BA00226B84 /* N8NetworkKit.framework */,
 				8EE15ABF1F4A1897001477C9 /* N8AuthKit.framework */,
 				8EA36B871F35D89F00D1DF79 /* N8InterfaceKit.framework */,
 				8E98C2741F1162FE00263659 /* Examples */,

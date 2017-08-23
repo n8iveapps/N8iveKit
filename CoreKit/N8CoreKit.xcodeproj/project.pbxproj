@@ -7,145 +7,142 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E0E87001F4DA28A00226B84 /* N8CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E86FE1F4DA28A00226B84 /* N8CoreKit.framework */; };
-		8E0E87011F4DA28A00226B84 /* N8NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E86FF1F4DA28A00226B84 /* N8NetworkKit.framework */; };
-		8E20F3001F49F19200E9963E /* AuthKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E20F2FE1F49F19200E9963E /* AuthKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E20F3071F49F35A00E9963E /* OAuth2Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E20F3061F49F35A00E9963E /* OAuth2Configuration.swift */; };
-		8EC46BAE1F4B698A00FD8081 /* NKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC46BAD1F4B698A00FD8081 /* NKError.swift */; };
-		8EE15AB71F4A152C001477C9 /* OAuth2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE15AB61F4A152C001477C9 /* OAuth2Client.swift */; };
-		8EE15AB91F4A158E001477C9 /* OAuth2Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE15AB81F4A158E001477C9 /* OAuth2Token.swift */; };
+		8E0E86B31F4D9F9400226B84 /* CoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0E86B11F4D9F9400226B84 /* CoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E0E86D51F4DA12E00226B84 /* DoubleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E86BE1F4D9FF000226B84 /* DoubleExtensions.swift */; };
+		8E0E86D61F4DA13200226B84 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E86BD1F4D9FF000226B84 /* StringExtensions.swift */; };
+		8E0E86D81F4DA14100226B84 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E86D71F4DA13F00226B84 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8E0E86FE1F4DA28A00226B84 /* N8CoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8CoreKit.framework; path = "../../../../../Users/muhammadbassio/Library/Developer/Xcode/DerivedData/N8iveKit-ewqmbjzhajtjgbbzjzmnuditufzw/Build/Products/Debug-iphoneos/N8CoreKit.framework"; sourceTree = "<group>"; };
-		8E0E86FF1F4DA28A00226B84 /* N8NetworkKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8NetworkKit.framework; path = "../NetworkKit/build/Debug-iphoneos/N8NetworkKit.framework"; sourceTree = "<group>"; };
-		8E20F2FB1F49F19200E9963E /* N8AuthKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = N8AuthKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E20F2FE1F49F19200E9963E /* AuthKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthKit.h; sourceTree = "<group>"; };
-		8E20F2FF1F49F19200E9963E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E20F3061F49F35A00E9963E /* OAuth2Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Configuration.swift; sourceTree = "<group>"; };
-		8EC46BAD1F4B698A00FD8081 /* NKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKError.swift; sourceTree = "<group>"; };
-		8EE15AB61F4A152C001477C9 /* OAuth2Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Client.swift; sourceTree = "<group>"; };
-		8EE15AB81F4A158E001477C9 /* OAuth2Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Token.swift; sourceTree = "<group>"; };
+		8E0E86AE1F4D9F9400226B84 /* N8CoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = N8CoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0E86B11F4D9F9400226B84 /* CoreKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreKit.h; sourceTree = "<group>"; };
+		8E0E86B21F4D9F9400226B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E0E86BD1F4D9FF000226B84 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		8E0E86BE1F4D9FF000226B84 /* DoubleExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtensions.swift; sourceTree = "<group>"; };
+		8E0E86D71F4DA13F00226B84 /* SwiftyJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8E20F2F71F49F19200E9963E /* Frameworks */ = {
+		8E0E86AA1F4D9F9400226B84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0E87001F4DA28A00226B84 /* N8CoreKit.framework in Frameworks */,
-				8E0E87011F4DA28A00226B84 /* N8NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8E0E86FD1F4DA28A00226B84 /* Frameworks */ = {
+		8E0E86A41F4D9F9400226B84 = {
 			isa = PBXGroup;
 			children = (
-				8E0E86FE1F4DA28A00226B84 /* N8CoreKit.framework */,
-				8E0E86FF1F4DA28A00226B84 /* N8NetworkKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		8E20F2F11F49F19200E9963E = {
-			isa = PBXGroup;
-			children = (
-				8E20F2FD1F49F19200E9963E /* AuthKit */,
-				8E20F2FC1F49F19200E9963E /* Products */,
-				8E0E86FD1F4DA28A00226B84 /* Frameworks */,
+				8E0E86B01F4D9F9400226B84 /* CoreKit */,
+				8E0E86AF1F4D9F9400226B84 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8E20F2FC1F49F19200E9963E /* Products */ = {
+		8E0E86AF1F4D9F9400226B84 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8E20F2FB1F49F19200E9963E /* N8AuthKit.framework */,
+				8E0E86AE1F4D9F9400226B84 /* N8CoreKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8E20F2FD1F49F19200E9963E /* AuthKit */ = {
+		8E0E86B01F4D9F9400226B84 /* CoreKit */ = {
 			isa = PBXGroup;
 			children = (
-				8E20F2FE1F49F19200E9963E /* AuthKit.h */,
-				8E20F2FF1F49F19200E9963E /* Info.plist */,
-				8E20F3061F49F35A00E9963E /* OAuth2Configuration.swift */,
-				8EE15AB61F4A152C001477C9 /* OAuth2Client.swift */,
-				8EE15AB81F4A158E001477C9 /* OAuth2Token.swift */,
-				8EC46BAD1F4B698A00FD8081 /* NKError.swift */,
+				8E0E86B11F4D9F9400226B84 /* CoreKit.h */,
+				8E0E86B21F4D9F9400226B84 /* Info.plist */,
+				8E0E86D41F4DA11900226B84 /* OpenSource */,
+				8E0E86B91F4D9FAE00226B84 /* Extensions */,
 			);
-			path = AuthKit;
+			path = CoreKit;
+			sourceTree = "<group>";
+		};
+		8E0E86B91F4D9FAE00226B84 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E86BE1F4D9FF000226B84 /* DoubleExtensions.swift */,
+				8E0E86BD1F4D9FF000226B84 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8E0E86D41F4DA11900226B84 /* OpenSource */ = {
+			isa = PBXGroup;
+			children = (
+				8E0E86D71F4DA13F00226B84 /* SwiftyJSON.swift */,
+			);
+			path = OpenSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8E20F2F81F49F19200E9963E /* Headers */ = {
+		8E0E86AB1F4D9F9400226B84 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E20F3001F49F19200E9963E /* AuthKit.h in Headers */,
+				8E0E86B31F4D9F9400226B84 /* CoreKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8E20F2FA1F49F19200E9963E /* N8AuthKit */ = {
+		8E0E86AD1F4D9F9400226B84 /* N8CoreKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8E20F3031F49F19200E9963E /* Build configuration list for PBXNativeTarget "N8AuthKit" */;
+			buildConfigurationList = 8E0E86B61F4D9F9400226B84 /* Build configuration list for PBXNativeTarget "N8CoreKit" */;
 			buildPhases = (
-				8E20F2F61F49F19200E9963E /* Sources */,
-				8E20F2F71F49F19200E9963E /* Frameworks */,
-				8E20F2F81F49F19200E9963E /* Headers */,
-				8E20F2F91F49F19200E9963E /* Resources */,
+				8E0E86A91F4D9F9400226B84 /* Sources */,
+				8E0E86AA1F4D9F9400226B84 /* Frameworks */,
+				8E0E86AB1F4D9F9400226B84 /* Headers */,
+				8E0E86AC1F4D9F9400226B84 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = N8AuthKit;
-			productName = AuthKit;
-			productReference = 8E20F2FB1F49F19200E9963E /* N8AuthKit.framework */;
+			name = N8CoreKit;
+			productName = CoreKit;
+			productReference = 8E0E86AE1F4D9F9400226B84 /* N8CoreKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		8E20F2F21F49F19200E9963E /* Project object */ = {
+		8E0E86A51F4D9F9400226B84 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "N8ive Apps";
 				TargetAttributes = {
-					8E20F2FA1F49F19200E9963E = {
+					8E0E86AD1F4D9F9400226B84 = {
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
 					};
 				};
 			};
-			buildConfigurationList = 8E20F2F51F49F19200E9963E /* Build configuration list for PBXProject "N8AuthKit" */;
+			buildConfigurationList = 8E0E86A81F4D9F9400226B84 /* Build configuration list for PBXProject "N8CoreKit" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 8E20F2F11F49F19200E9963E;
-			productRefGroup = 8E20F2FC1F49F19200E9963E /* Products */;
+			mainGroup = 8E0E86A41F4D9F9400226B84;
+			productRefGroup = 8E0E86AF1F4D9F9400226B84 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8E20F2FA1F49F19200E9963E /* N8AuthKit */,
+				8E0E86AD1F4D9F9400226B84 /* N8CoreKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8E20F2F91F49F19200E9963E /* Resources */ = {
+		8E0E86AC1F4D9F9400226B84 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -155,21 +152,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		8E20F2F61F49F19200E9963E /* Sources */ = {
+		8E0E86A91F4D9F9400226B84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E20F3071F49F35A00E9963E /* OAuth2Configuration.swift in Sources */,
-				8EE15AB71F4A152C001477C9 /* OAuth2Client.swift in Sources */,
-				8EE15AB91F4A158E001477C9 /* OAuth2Token.swift in Sources */,
-				8EC46BAE1F4B698A00FD8081 /* NKError.swift in Sources */,
+				8E0E86D81F4DA14100226B84 /* SwiftyJSON.swift in Sources */,
+				8E0E86D61F4DA13200226B84 /* StringExtensions.swift in Sources */,
+				8E0E86D51F4DA12E00226B84 /* DoubleExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8E20F3011F49F19200E9963E /* Debug */ = {
+		8E0E86B41F4D9F9400226B84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -229,7 +225,7 @@
 			};
 			name = Debug;
 		};
-		8E20F3021F49F19200E9963E /* Release */ = {
+		8E0E86B51F4D9F9400226B84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,7 +278,7 @@
 			};
 			name = Release;
 		};
-		8E20F3041F49F19200E9963E /* Debug */ = {
+		8E0E86B71F4D9F9400226B84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -292,15 +288,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/AuthKit",
-				);
-				INFOPLIST_FILE = AuthKit/Info.plist;
+				INFOPLIST_FILE = CoreKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.n8iveapps.AuthKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.n8iveapps.CoreKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -309,7 +301,7 @@
 			};
 			name = Debug;
 		};
-		8E20F3051F49F19200E9963E /* Release */ = {
+		8E0E86B81F4D9F9400226B84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -319,15 +311,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/AuthKit",
-				);
-				INFOPLIST_FILE = AuthKit/Info.plist;
+				INFOPLIST_FILE = CoreKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.n8iveapps.AuthKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.n8iveapps.CoreKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -338,25 +326,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8E20F2F51F49F19200E9963E /* Build configuration list for PBXProject "N8AuthKit" */ = {
+		8E0E86A81F4D9F9400226B84 /* Build configuration list for PBXProject "N8CoreKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E20F3011F49F19200E9963E /* Debug */,
-				8E20F3021F49F19200E9963E /* Release */,
+				8E0E86B41F4D9F9400226B84 /* Debug */,
+				8E0E86B51F4D9F9400226B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8E20F3031F49F19200E9963E /* Build configuration list for PBXNativeTarget "N8AuthKit" */ = {
+		8E0E86B61F4D9F9400226B84 /* Build configuration list for PBXNativeTarget "N8CoreKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8E20F3041F49F19200E9963E /* Debug */,
-				8E20F3051F49F19200E9963E /* Release */,
+				8E0E86B71F4D9F9400226B84 /* Debug */,
+				8E0E86B81F4D9F9400226B84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 8E20F2F21F49F19200E9963E /* Project object */;
+	rootObject = 8E0E86A51F4D9F9400226B84 /* Project object */;
 }

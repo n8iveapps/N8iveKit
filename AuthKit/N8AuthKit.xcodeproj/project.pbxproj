@@ -11,7 +11,6 @@
 		8E0E87011F4DA28A00226B84 /* N8NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E86FF1F4DA28A00226B84 /* N8NetworkKit.framework */; };
 		8E20F3001F49F19200E9963E /* AuthKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E20F2FE1F49F19200E9963E /* AuthKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E20F3071F49F35A00E9963E /* OAuth2Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E20F3061F49F35A00E9963E /* OAuth2Configuration.swift */; };
-		8EC46BAE1F4B698A00FD8081 /* NKError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC46BAD1F4B698A00FD8081 /* NKError.swift */; };
 		8EE15AB71F4A152C001477C9 /* OAuth2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE15AB61F4A152C001477C9 /* OAuth2Client.swift */; };
 		8EE15AB91F4A158E001477C9 /* OAuth2Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE15AB81F4A158E001477C9 /* OAuth2Token.swift */; };
 /* End PBXBuildFile section */
@@ -23,7 +22,6 @@
 		8E20F2FE1F49F19200E9963E /* AuthKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthKit.h; sourceTree = "<group>"; };
 		8E20F2FF1F49F19200E9963E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E20F3061F49F35A00E9963E /* OAuth2Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Configuration.swift; sourceTree = "<group>"; };
-		8EC46BAD1F4B698A00FD8081 /* NKError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKError.swift; sourceTree = "<group>"; };
 		8EE15AB61F4A152C001477C9 /* OAuth2Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Client.swift; sourceTree = "<group>"; };
 		8EE15AB81F4A158E001477C9 /* OAuth2Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,7 +73,6 @@
 				8E20F3061F49F35A00E9963E /* OAuth2Configuration.swift */,
 				8EE15AB61F4A152C001477C9 /* OAuth2Client.swift */,
 				8EE15AB81F4A158E001477C9 /* OAuth2Token.swift */,
-				8EC46BAD1F4B698A00FD8081 /* NKError.swift */,
 			);
 			path = AuthKit;
 			sourceTree = "<group>";
@@ -162,7 +159,6 @@
 				8E20F3071F49F35A00E9963E /* OAuth2Configuration.swift in Sources */,
 				8EE15AB71F4A152C001477C9 /* OAuth2Client.swift in Sources */,
 				8EE15AB91F4A158E001477C9 /* OAuth2Token.swift in Sources */,
-				8EC46BAE1F4B698A00FD8081 /* NKError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

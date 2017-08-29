@@ -8,12 +8,13 @@
 
 import Foundation
 
-struct NKError: Error {
-  var localizedTitle: String
-  var localizedDescription: String
+public struct NKError: Error {
+  public var localizedTitle: String
+  public var localizedDescription: String
   
-  init(localizedTitle: String?, localizedDescription: String) {
+  public init(localizedTitle: String?, localizedDescription: String) {
     self.localizedTitle = localizedTitle ?? "Error"
     self.localizedDescription = localizedDescription
   }
 }
+

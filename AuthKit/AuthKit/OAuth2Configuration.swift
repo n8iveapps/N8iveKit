@@ -7,7 +7,11 @@
 //
 
 import Foundation
-import UIKit
+#if os(iOS)
+  import UIKit
+#elseif os(macOS)
+  import Cocoa
+#endif
 
 open class OAuth2Configuration {
   
@@ -35,18 +39,21 @@ open class OAuth2Configuration {
   /// The response type expected from an authorize call, e.g. "code" for Google.
   private(set) public var responseType: String = "code"
 
-  /// The SFSafariViewController title.
-  public final var preferredTitle: String = ""
+  // SFSafariViewController configuration
+  #if os(iOS)
+    /// The SFSafariViewController title.
+    public final var preferredTitle: String = ""
   
-  /// The SFSafariViewController tintColor.
-  public final var preferredBarTintColor: UIColor = UIColor.white
+    /// The SFSafariViewController tintColor.
+    public final var preferredBarTintColor: UIColor = UIColor.white
   
-  /// The SFSafariViewController tintColor.
-  public final var preferredTintColor: UIColor = UIColor.black
+    /// The SFSafariViewController tintColor.
+    public final var preferredTintColor: UIColor = UIColor.black
   
-  /// The SFSafariViewController presentationStyle.
-  public final var preferredPresentationStyle: UIModalPresentationStyle = UIModalPresentationStyle.formSheet
-  
+    /// The SFSafariViewController presentationStyle.
+    public final var preferredPresentationStyle: UIModalPresentationStyle = UIModalPresentationStyle.formSheet
+  #endif
+
   public init(clientId:String, clientSecret:String, authURL:String, tokenURL:String, scope:String, redirectURL:String) {
     self.clientId = clientId
     self.clientSecret = clientSecret

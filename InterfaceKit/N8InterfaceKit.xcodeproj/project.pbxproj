@@ -28,6 +28,7 @@
 		8E98C2BE1F11690B00263659 /* NKTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2AA1F1163D100263659 /* NKTabBar.swift */; };
 		8E98C2BF1F11690B00263659 /* NKTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2AB1F1163D100263659 /* NKTabBarItemView.swift */; };
 		8E98C2C01F11690B00263659 /* NKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2AC1F1163D100263659 /* NKTextField.swift */; };
+		8EE42B411F6030AF005A690C /* NKActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42B401F6030AF005A690C /* NKActivityIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		8E98C2AA1F1163D100263659 /* NKTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTabBar.swift; sourceTree = "<group>"; };
 		8E98C2AB1F1163D100263659 /* NKTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTabBarItemView.swift; sourceTree = "<group>"; };
 		8E98C2AC1F1163D100263659 /* NKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTextField.swift; sourceTree = "<group>"; };
+		8EE42B401F6030AF005A690C /* NKActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKActivityIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				8E98C2AA1F1163D100263659 /* NKTabBar.swift */,
 				8E98C2AB1F1163D100263659 /* NKTabBarItemView.swift */,
 				8E98C2AC1F1163D100263659 /* NKTextField.swift */,
+				8EE42B401F6030AF005A690C /* NKActivityIndicatorView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				8E98C2B21F11690B00263659 /* UIScreenExtensions.swift in Sources */,
 				8E98C2B31F11690B00263659 /* UIViewControllerExtensions.swift in Sources */,
 				8E98C2B41F11690B00263659 /* UIViewExtensions.swift in Sources */,
+				8EE42B411F6030AF005A690C /* NKActivityIndicatorView.swift in Sources */,
 				8E98C2B51F11690B00263659 /* NKNavigationTransitions.swift in Sources */,
 				8E98C2B61F11690B00263659 /* NKTabBarItem.swift in Sources */,
 				8E98C2B71F11690B00263659 /* NKTabBarLayout.swift in Sources */,

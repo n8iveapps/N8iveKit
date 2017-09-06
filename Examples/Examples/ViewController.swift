@@ -8,10 +8,11 @@
 
 import UIKit
 import N8AuthKit
+import N8InterfaceKit
 
 class ViewController: UIViewController {
   
-  @IBOutlet var spinner:UIActivityIndicatorView?
+  @IBOutlet var spinner:NKActivityIndicatorView?
   @IBOutlet var progressLabel:UILabel?
   
   override func viewDidLoad() {
@@ -30,6 +31,14 @@ class ViewController: UIViewController {
   
   @IBAction func showAuth() {
     self.authGoogle()
+  }
+  
+  @IBAction func start() {
+    self.spinner?.startAnimating()
+  }
+  
+  @IBAction func stop() {
+    self.spinner?.stopAnimating()
   }
   
   

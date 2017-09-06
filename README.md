@@ -33,6 +33,10 @@ Replaces [UITabBarController](https://developer.apple.com/documentation/uikit/ui
 
 To access the TabBar, just call `adaptableTabBar` property of the `NKTabBarController`.
 
+#### NKActivityIndicatorView:
+
+Replaces [UIActivityIndicatorView](https://developer.apple.com/documentation/uikit/uiactivityindicatorview#main) by adding the ability to use your own animatable layer and handle it.
+
 
 
 ## AuthKit

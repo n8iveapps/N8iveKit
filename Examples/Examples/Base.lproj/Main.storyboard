@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -96,13 +97,23 @@
                                     <action selector="showAuth" destination="SDW-eH-W0Y" eventType="touchUpInside" id="8aK-cu-UHn"/>
                                 </connections>
                             </button>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5Wx-Sh-1g8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qs1-K2-gMM">
+                                <rect key="frame" x="40" y="80" width="88" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uHY-m1-xYm"/>
+                                </constraints>
+                                <state key="normal" title="Start loading"/>
+                                <connections>
+                                    <action selector="start" destination="SDW-eH-W0Y" eventType="touchUpInside" id="OO6-Hx-btb"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="5Wx-Sh-1g8" customClass="NKActivityIndicatorView" customModule="N8InterfaceKit">
                                 <rect key="frame" x="141" y="265" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="KM3-ef-13T"/>
                                     <constraint firstAttribute="width" constant="37" id="g7g-ro-Ojj"/>
                                 </constraints>
-                                <color key="color" red="0.20580187182741116" green="0.20580187182741116" blue="0.20580187182741116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="color" red="0.958984375" green="0.20580187182741116" blue="0.20580187182741116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </activityIndicatorView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Aq-ye-f50">
                                 <rect key="frame" x="10" y="314" width="300" height="90"/>
@@ -114,14 +125,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccN-wm-vpq">
+                                <rect key="frame" x="193" y="80" width="87" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Vp4-oJ-hXZ"/>
+                                </constraints>
+                                <state key="normal" title="Stop loading"/>
+                                <connections>
+                                    <action selector="stop" destination="SDW-eH-W0Y" eventType="touchUpInside" id="rTh-T4-1az"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="ccN-wm-vpq" secondAttribute="trailing" constant="24" id="6Kl-RJ-2Hd"/>
                             <constraint firstItem="5Wx-Sh-1g8" firstAttribute="centerY" secondItem="4ne-fA-Gqf" secondAttribute="centerY" id="DD9-VZ-Ehc"/>
+                            <constraint firstItem="Qs1-K2-gMM" firstAttribute="top" secondItem="sgW-Uu-H4z" secondAttribute="bottom" constant="40" id="EVz-9I-GyA"/>
                             <constraint firstItem="2Aq-ye-f50" firstAttribute="centerX" secondItem="4ne-fA-Gqf" secondAttribute="centerX" id="GMh-e5-RyC"/>
+                            <constraint firstItem="Qs1-K2-gMM" firstAttribute="leading" secondItem="4ne-fA-Gqf" secondAttribute="leadingMargin" constant="24" id="Ncu-uC-YNl"/>
                             <constraint firstItem="aRK-Q2-jIo" firstAttribute="centerX" secondItem="4ne-fA-Gqf" secondAttribute="centerX" id="WOf-Ml-kbp"/>
                             <constraint firstItem="5Wx-Sh-1g8" firstAttribute="centerX" secondItem="4ne-fA-Gqf" secondAttribute="centerX" id="Zta-VE-qGd"/>
                             <constraint firstItem="aRK-Q2-jIo" firstAttribute="centerY" secondItem="4ne-fA-Gqf" secondAttribute="centerY" id="fJH-0S-Eeq"/>
+                            <constraint firstItem="ccN-wm-vpq" firstAttribute="top" secondItem="sgW-Uu-H4z" secondAttribute="bottom" constant="40" id="quO-Cc-QS3"/>
                             <constraint firstItem="2Aq-ye-f50" firstAttribute="top" secondItem="5Wx-Sh-1g8" secondAttribute="bottom" constant="12" id="rws-9x-BrY"/>
                         </constraints>
                     </view>

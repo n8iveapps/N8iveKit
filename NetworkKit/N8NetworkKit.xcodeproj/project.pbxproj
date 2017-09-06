@@ -25,8 +25,9 @@
 		8E0E86FA1F4DA1A600226B84 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E86E91F4DA19400226B84 /* TaskDelegate.swift */; };
 		8E0E86FB1F4DA1A600226B84 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E86EA1F4DA19400226B84 /* Timeline.swift */; };
 		8E0E86FC1F4DA1A600226B84 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0E86EB1F4DA19400226B84 /* Validation.swift */; };
-		8E312D551F55FE1E00FDE021 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E312D541F55FE1E00FDE021 /* APIManager.swift */; };
-		8E312D581F55FE5200FDE021 /* N8CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E312D571F55FE5200FDE021 /* N8CoreKit.framework */; };
+		8EE42B441F603922005A690C /* N8CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE42B421F603922005A690C /* N8CoreKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		8EE42B4B1F603B6C005A690C /* N8AuthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE42B4A1F603B6B005A690C /* N8AuthKit.framework */; };
+		8EE42B4C1F603B87005A690C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E312D541F55FE1E00FDE021 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,11 @@
 		8E312D571F55FE5200FDE021 /* N8CoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8CoreKit.framework; path = "../../../../../Users/muhammadbassio/Library/Developer/Xcode/DerivedData/N8iveKit-dvzxvyachblmiuddgxgmzohxmegv/Build/Products/Debug-iphoneos/N8CoreKit.framework"; sourceTree = "<group>"; };
 		8E3BC1321F56CBE60019D8F7 /* N8NetworkKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N8NetworkKit_macOS.h; sourceTree = "<group>"; };
 		8E3BC1331F56CBE60019D8F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EE42B421F603922005A690C /* N8CoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8CoreKit.framework; path = "../../../../../Users/muhammadbassio/Library/Developer/Xcode/DerivedData/N8iveKit-ewqmbjzhajtjgbbzjzmnuditufzw/Build/Products/Debug-iphonesimulator/N8CoreKit.framework"; sourceTree = "<group>"; };
+		8EE42B431F603922005A690C /* N8AuthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8AuthKit.framework; path = "../AuthKit/build/Debug-iphoneos/N8AuthKit.framework"; sourceTree = "<group>"; };
+		8EE42B461F603948005A690C /* N8AuthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8AuthKit.framework; path = "../AuthKit/build/Debug-iphoneos/N8AuthKit.framework"; sourceTree = "<group>"; };
+		8EE42B481F60398C005A690C /* N8AuthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8AuthKit.framework; path = "../../../../../Users/muhammadbassio/Library/Developer/Xcode/DerivedData/N8iveKit-ewqmbjzhajtjgbbzjzmnuditufzw/Build/Products/Debug-iphoneos/N8AuthKit.framework"; sourceTree = "<group>"; };
+		8EE42B4A1F603B6B005A690C /* N8AuthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8AuthKit.framework; path = "../../../../../Users/muhammadbassio/Library/Developer/Xcode/DerivedData/N8iveKit-ewqmbjzhajtjgbbzjzmnuditufzw/Build/Products/Debug-iphonesimulator/N8AuthKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E312D581F55FE5200FDE021 /* N8CoreKit.framework in Frameworks */,
+				8EE42B4B1F603B6C005A690C /* N8AuthKit.framework in Frameworks */,
+				8EE42B441F603922005A690C /* N8CoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +139,11 @@
 		8E312D561F55FE5200FDE021 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8EE42B431F603922005A690C /* N8AuthKit.framework */,
+				8EE42B461F603948005A690C /* N8AuthKit.framework */,
+				8EE42B481F60398C005A690C /* N8AuthKit.framework */,
+				8EE42B4A1F603B6B005A690C /* N8AuthKit.framework */,
+				8EE42B421F603922005A690C /* N8CoreKit.framework */,
 				8E312D571F55FE5200FDE021 /* N8CoreKit.framework */,
 			);
 			name = Frameworks;
@@ -224,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EE42B4C1F603B87005A690C /* APIManager.swift in Sources */,
 				8E0E86EC1F4DA1A600226B84 /* AFError.swift in Sources */,
 				8E0E86ED1F4DA1A600226B84 /* Alamofire.swift in Sources */,
 				8E0E86EE1F4DA1A600226B84 /* DispatchQueue+Alamofire.swift in Sources */,
@@ -236,7 +249,6 @@
 				8E0E86F51F4DA1A600226B84 /* ResponseSerialization.swift in Sources */,
 				8E0E86F61F4DA1A600226B84 /* Result.swift in Sources */,
 				8E0E86F71F4DA1A600226B84 /* ServerTrustPolicy.swift in Sources */,
-				8E312D551F55FE1E00FDE021 /* APIManager.swift in Sources */,
 				8E0E86F81F4DA1A600226B84 /* SessionDelegate.swift in Sources */,
 				8E0E86F91F4DA1A600226B84 /* SessionManager.swift in Sources */,
 				8E0E86FA1F4DA1A600226B84 /* TaskDelegate.swift in Sources */,

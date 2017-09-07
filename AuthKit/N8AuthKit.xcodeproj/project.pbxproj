@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		8E0E87001F4DA28A00226B84 /* N8CoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E86FE1F4DA28A00226B84 /* N8CoreKit.framework */; };
-		8E0E87011F4DA28A00226B84 /* N8NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E0E86FF1F4DA28A00226B84 /* N8NetworkKit.framework */; };
 		8E20F3001F49F19200E9963E /* AuthKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E20F2FE1F49F19200E9963E /* AuthKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E20F3071F49F35A00E9963E /* OAuth2Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E20F3061F49F35A00E9963E /* OAuth2Configuration.swift */; };
-		8EE15AB71F4A152C001477C9 /* OAuth2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE15AB61F4A152C001477C9 /* OAuth2Client.swift */; };
+		8EBB87551F61D9B7008F850E /* OAuth2Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE15AB61F4A152C001477C9 /* OAuth2Client.swift */; };
+		8EBB87571F61D9BD008F850E /* N8NetworkKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EBB87561F61D9BD008F850E /* N8NetworkKit.framework */; };
 		8EE15AB91F4A158E001477C9 /* OAuth2Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE15AB81F4A158E001477C9 /* OAuth2Token.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +24,8 @@
 		8E20F3061F49F35A00E9963E /* OAuth2Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Configuration.swift; sourceTree = "<group>"; };
 		8E3BC14C1F56CCB70019D8F7 /* N8AuthKit_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = N8AuthKit_macOS.h; sourceTree = "<group>"; };
 		8E3BC14D1F56CCB70019D8F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EBB87531F61D97E008F850E /* N8NetworkKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8NetworkKit.framework; path = "../NetworkKit/build/Release-iphoneos/N8NetworkKit.framework"; sourceTree = "<group>"; };
+		8EBB87561F61D9BD008F850E /* N8NetworkKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = N8NetworkKit.framework; path = "../../../../../Users/muhammadbassio/Library/Developer/Xcode/DerivedData/N8iveKit-dvzxvyachblmiuddgxgmzohxmegv/Build/Products/Debug-iphonesimulator/N8NetworkKit.framework"; sourceTree = "<group>"; };
 		8EE15AB61F4A152C001477C9 /* OAuth2Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Client.swift; sourceTree = "<group>"; };
 		8EE15AB81F4A158E001477C9 /* OAuth2Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -33,8 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EBB87571F61D9BD008F850E /* N8NetworkKit.framework in Frameworks */,
 				8E0E87001F4DA28A00226B84 /* N8CoreKit.framework in Frameworks */,
-				8E0E87011F4DA28A00226B84 /* N8NetworkKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +46,8 @@
 		8E0E86FD1F4DA28A00226B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8EBB87531F61D97E008F850E /* N8NetworkKit.framework */,
+				8EBB87561F61D9BD008F850E /* N8NetworkKit.framework */,
 				8E0E86FE1F4DA28A00226B84 /* N8CoreKit.framework */,
 				8E0E86FF1F4DA28A00226B84 /* N8NetworkKit.framework */,
 			);
@@ -168,8 +172,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EBB87551F61D9B7008F850E /* OAuth2Client.swift in Sources */,
 				8E20F3071F49F35A00E9963E /* OAuth2Configuration.swift in Sources */,
-				8EE15AB71F4A152C001477C9 /* OAuth2Client.swift in Sources */,
 				8EE15AB91F4A158E001477C9 /* OAuth2Token.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

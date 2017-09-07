@@ -37,6 +37,31 @@ To access the TabBar, just call `adaptableTabBar` property of the `NKTabBarContr
 
 Replaces [UIActivityIndicatorView](https://developer.apple.com/documentation/uikit/uiactivityindicatorview#main) by adding the ability to use your own animatable layer and handle it.
 
+#### NKRefreshControl:
+
+Replaces [UIRefreshControl](https://developer.apple.com/documentation/uikit/uirefreshcontrol) by adding the ability to use your own animatable layer and handle it, below is an example on how to use it.
+
+```swift
+let rc = NKRefreshControl()
+
+override func viewDidLoad() {
+  super.viewDidLoad()
+  rc.tintColor = UIColor.red
+  rc.addTarget(self, action: #selector(RefreshViewController.refresh), for: UIControlEvents.valueChanged)
+  self.scrollView.refreshControl = rc
+}
+
+@objc func refresh(){
+  DispatchQueue.main.asyncAfter(deadline: (DispatchTime.now() + Double(5.0))) { () -> Void in
+  	self.rc.endRefreshing()
+  }
+}
+
+func scrollViewDidScroll(_ scrollView: UIScrollView) {
+  rc.scrollViewDidScroll(scrollView)
+}
+```
+
 
 
 ## AuthKit

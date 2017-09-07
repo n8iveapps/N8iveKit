@@ -18,6 +18,7 @@
 		8E98C2801F1162FE00263659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E98C27E1F1162FE00263659 /* LaunchScreen.storyboard */; };
 		8EA36B881F35D89F00D1DF79 /* N8InterfaceKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA36B871F35D89F00D1DF79 /* N8InterfaceKit.framework */; };
 		8EA36B891F35D89F00D1DF79 /* N8InterfaceKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8EA36B871F35D89F00D1DF79 /* N8InterfaceKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8EBB87591F61DA30008F850E /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBB87581F61DA30008F850E /* RefreshViewController.swift */; };
 		8EE15AC01F4A1897001477C9 /* N8AuthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE15ABF1F4A1897001477C9 /* N8AuthKit.framework */; };
 		8EE15AC11F4A1897001477C9 /* N8AuthKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE15ABF1F4A1897001477C9 /* N8AuthKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		8E98C27F1F1162FE00263659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E98C2811F1162FE00263659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EA36B871F35D89F00D1DF79 /* N8InterfaceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = N8InterfaceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EBB87581F61DA30008F850E /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
 		8EE15ABF1F4A1897001477C9 /* N8AuthKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = N8AuthKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 				8E98C27C1F1162FE00263659 /* Assets.xcassets */,
 				8E98C27E1F1162FE00263659 /* LaunchScreen.storyboard */,
 				8E98C2811F1162FE00263659 /* Info.plist */,
+				8EBB87581F61DA30008F850E /* RefreshViewController.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E98C2781F1162FE00263659 /* ViewController.swift in Sources */,
+				8EBB87591F61DA30008F850E /* RefreshViewController.swift in Sources */,
 				8E98C2761F1162FE00263659 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

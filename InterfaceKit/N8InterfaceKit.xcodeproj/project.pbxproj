@@ -28,6 +28,7 @@
 		8E98C2BE1F11690B00263659 /* NKTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2AA1F1163D100263659 /* NKTabBar.swift */; };
 		8E98C2BF1F11690B00263659 /* NKTabBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2AB1F1163D100263659 /* NKTabBarItemView.swift */; };
 		8E98C2C01F11690B00263659 /* NKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E98C2AC1F1163D100263659 /* NKTextField.swift */; };
+		8EAA78021F619B2600288BEA /* NKRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA78011F619B2600288BEA /* NKRefreshControl.swift */; };
 		8EE42B411F6030AF005A690C /* NKActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE42B401F6030AF005A690C /* NKActivityIndicatorView.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		8E98C2AA1F1163D100263659 /* NKTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTabBar.swift; sourceTree = "<group>"; };
 		8E98C2AB1F1163D100263659 /* NKTabBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTabBarItemView.swift; sourceTree = "<group>"; };
 		8E98C2AC1F1163D100263659 /* NKTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTextField.swift; sourceTree = "<group>"; };
+		8EAA78011F619B2600288BEA /* NKRefreshControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKRefreshControl.swift; sourceTree = "<group>"; };
 		8EE42B401F6030AF005A690C /* NKActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKActivityIndicatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 		8E98C2921F1163D100263659 /* source */ = {
 			isa = PBXGroup;
 			children = (
+				8EAA78001F619AE800288BEA /* controls */,
 				8E98C2931F1163D100263659 /* extensions */,
 				8E98C29E1F1163D100263659 /* models */,
 				8E98C2A21F1163D100263659 /* viewControllers */,
@@ -162,6 +165,14 @@
 				8EE42B401F6030AF005A690C /* NKActivityIndicatorView.swift */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		8EAA78001F619AE800288BEA /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				8EAA78011F619B2600288BEA /* NKRefreshControl.swift */,
+			);
+			path = controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 				8E98C2B91F11690B00263659 /* NKTabBarController.swift in Sources */,
 				8E98C2BA1F11690B00263659 /* NKViewController.swift in Sources */,
 				8E98C2BB1F11690B00263659 /* NKLabel.swift in Sources */,
+				8EAA78021F619B2600288BEA /* NKRefreshControl.swift in Sources */,
 				8E98C2BC1F11690B00263659 /* NKNavigationBar.swift in Sources */,
 				8E98C2BD1F11690B00263659 /* NKNavigationView.swift in Sources */,
 				8E98C2BE1F11690B00263659 /* NKTabBar.swift in Sources */,
